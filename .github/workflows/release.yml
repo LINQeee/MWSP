@@ -17,7 +17,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Build and publish with Gradle
-        uses: gradle/gradle-build-action@3
+        uses: gradle/gradle-build-action@v3
         with:
           arguments: --no-daemon -i jreleaserConfig build test publish
         env:
